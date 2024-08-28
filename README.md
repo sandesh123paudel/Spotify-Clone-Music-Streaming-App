@@ -1,4 +1,4 @@
-# musicplayer
+# Spotify Clone: Music Streaming App
 
 A new Flutter project.
 
