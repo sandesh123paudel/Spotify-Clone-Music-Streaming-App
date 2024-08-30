@@ -5,7 +5,8 @@ import 'package:musicplayer/common/widgets/appbar/app_bar.dart';
 import 'package:musicplayer/common/widgets/button/basic_app_button.dart';
 import 'package:musicplayer/core/configs/assets/app_images.dart';
 import 'package:musicplayer/core/configs/assets/app_vectors.dart';
-import 'package:musicplayer/core/configs/theme/app_colors.dart';
+import 'package:musicplayer/presentation/auth/pages/signin.dart';
+import 'package:musicplayer/presentation/auth/pages/signup.dart';
 
 class SignUpOrSignInPage extends StatelessWidget {
   const SignUpOrSignInPage({super.key});
@@ -15,7 +16,7 @@ class SignUpOrSignInPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          BasicAppbar(),
+          const BasicAppbar(),
           Align(
             alignment: Alignment.topRight,
             child: SvgPicture.asset(AppVectors.topPattern),
@@ -30,7 +31,8 @@ class SignUpOrSignInPage extends StatelessWidget {
           Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 40),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 40),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -63,16 +65,28 @@ class SignUpOrSignInPage extends StatelessWidget {
                         Expanded(
                             flex: 1,
                             child: BasicAppButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            const SignUpPage()));
+                              },
                               title: 'Register',
                             )),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Expanded(
                             flex: 1,
                             child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              const SignInPage()));
+                                },
                                 child: Text('Sign In',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
