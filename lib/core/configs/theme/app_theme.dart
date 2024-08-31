@@ -26,6 +26,7 @@ class AppTheme {
             width: 0.4
           )
         ),
+        
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
           borderSide: const BorderSide(

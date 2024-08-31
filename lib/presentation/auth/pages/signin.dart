@@ -60,6 +60,7 @@ class SignInPage extends StatelessWidget {
     ).applyDefaults(Theme.of(context).inputDecorationTheme));
   }
 
+
   Widget _signUpText(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 20),
