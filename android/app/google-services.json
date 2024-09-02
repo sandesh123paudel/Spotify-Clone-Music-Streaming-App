@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "219155312039",
+    "firebase_url": "https://spotifymusciplayer-default-rtdb.firebaseio.com",
+    "project_id": "spotifymusciplayer",
+    "storage_bucket": "spotifymusciplayer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219155312039:android:a2e0eed23585f364a59a82",
+        "android_client_info": {
+          "package_name": "com.example.musicplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCswn1YptN08Ken7zfI64geuYwNG3mO6js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
